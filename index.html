@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	<title>BS5 Forms</title>
+	<style>
+
+		.container {
+			background-color: lightgray;
+			padding: 20px;
+			margin: 10px;
+			border-style: solid;
+			border-color: dimgrey;
+			border-radius: 10px;
+		}
+
+		.card {
+			background-color: black;
+
+		}
+
+		.navbar {
+			margin-left: 10px;
+			margin-right: 1000px;
+		}
+
+		body {
+			background-color: black;
+		}
+	
+
+	</style>
+</head>
+<body>
+	<div class="navbar-container bg bg-dark">
+	<nav class="navbar navbar-expand-xl">
+		<div class="container-fluid">
+			<a class="navbar-brand">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/IMDb_Logo_Square.svg/2048px-IMDb_Logo_Square.svg.png" class="rounded" id="brand" width="100px">
+			</a>
+		  
+					<ul class="navbar-nav">
+						    <li class="nav-item">
+						      <a href="https://www.imdb.com" class="nav-link"><font color="#FFFFFF">Home</font></a>
+						    </li>
+
+						    <li class="nav-item">
+						      <a href="#" id="movies" class="nav-link"><font color="#FFFFFF">Movies</font></a>
+						    </li>
+
+						    <li class="nav-item dropdown">
+						      <a href="#" class="nav-link dropdow-toggle" role="button" data-bs-toggle="dropdown"><font color="#FFFFFF">Genre</font></a>
+							      <ul class="dropdown-menu">
+							      		<li><a class="dropdown-item" href="#">Action</a></li>
+		   								<li><a class="dropdown-item" id="movies">Comedy</a></li>
+		   								<li><a class="dropdown-item" href="#">Horror</a></li>
+		  							</ul>
+						    </li>
+
+						    <li class="nav-item">
+						      <a href="#" class="nav-link" id="contact"><font color="#FFFFFF">Contact Us</font></a>
+						    </li>
+
+						</font></a></li>
+					</ul>
+		</div>
+	</nav>
+	</div>
+
+<br>
+	<!-- Home Page -->
+	<div id="home" class="container bg bg-dark">
+	  <h1 class="text text-warning">Welcome to Movie Review</h1>
+	  <p class="text text-light">Welcome to our Movie Review website. Here, you can find reviews, ratings, and recommendations for the latest movies. Whether you're a cinephile or just looking for something to watch, we've got you covered!</p>
+	  <p class="text text-light">Stay tuned for regular updates on new releases, top picks, and much more.</p>
+	</div>
+
+	<!-- Movies Page -->
+	<div id="movies" class="container mt-3 mb-3 bg bg-dark">
+	  <h1 class="text-warning">Latest Movies</h1>
+	  <br>
+
+		  	<div class="row">
+
+		    	<div class="col-md-4">
+		      		<div class="card">
+		        		<img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p10866908_p_v8_ax.jpg" class="card-img-top" alt="TWR">
+				        <div class="card-body">
+				          <h5 class="card-title text-warning">The Wedding Ringer</h5>
+				          <p class="card-text text-light">Two weeks shy of his wedding, a socially awkward guy enters into a charade by hiring the owner of a company that provides best men for grooms in need. (IMDb)</p>
+				          <a href="https://maxdcd.github.io/Q3-Quiz1/" class="btn btn-warning text-dark"><strong>Read Review</strong></a>
+				        </div>
+				    </div>
+				</div>
+
+				<div class="col-md-4">
+		      		<div class="card">
+		        		<img src="https://www.sonypictures.com/sites/default/files/styles/max_560x840/public/chameleon/title-movie/229877_big_daddy_1999_1400x2100_0.jpg?itok=7-tuVska" alt="BIGDADDY">
+				        <div class="card-body">
+				          <h5 class="card-title text-warning">Big Daddy</h5>
+				          <p class="card-text text-light">A lazy law school graduate adopts a kid to impress his girlfriend, but everything doesn't go as planned. (IMDb)</p>
+				          <a href="https://maxdcd.github.io/Q3-Quiz1/" class="btn btn-warning text-dark"><strong>Read Review</strong></a>
+				        </div>
+				    </div>
+				</div>
+
+
+				<!-- <a href="https://maxdcd.github.io/Q3-Quiz1/" class="btn btn-warning text-dark"><strong>Read Review</strong></a> -->
+
+		    	<div class="col-md-4">
+		      		<div class="card">
+		        		<img src="https://static.wikia.nocookie.net/shrek/images/8/85/Shrek_2001_poster.jpg/revision/latest/scale-to-width-down/1200?cb=20201020072731" class="card-img-top" alt="SHREK">
+				        <div class="card-body">
+				          <h5 class="card-title text-warning">Shrek</h5>
+				          <p class="card-text text-light">A mean lord exiles fairytale creatures to the swamp of a grumpy ogre, who must go on a quest and rescue a princess for the lord in order to get his land back. (IMDb)</p>
+				          <a href="https://maxdcd.github.io/Q3-Quiz1/" class="btn btn-warning text-dark"><strong>Read Review</strong></a>
+				        </div>
+				    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<br>
+	<!-- Contact Us Page -->
+	<div id="contact" class="container bg-dark">
+	  <h2 class="text-warning">Contact Us</h2>
+	  <p class="text-light">If you have any questions, feedback, or suggestions, feel free to reach out to us:</p>
+	  <ul class="text-light">
+	    <li>Email: info@imdb.com</li>
+	    <li>Phone: 1-800-IMDB-REVIEWS</li>
+	    <li>Address: 123 Movie St., Greenhills, San Juan, Philippines</li>
+	  </ul>
+	</div>
+
+<footer>
+	<footer class="container bg bg-dark">
+	<nav>
+	  <div class="container-fluid justify-content-center">
+	  	<form class="d-flex">
+			<input class="form-control me-2" type="text" placeholder="Search">
+		        <button class="btn btn-warning text-black" type="button">Search</button>
+			    	</form>
+	    
+	  </div>
+	</nav>
+</footer>
+</body>
+</head>
+</html>
